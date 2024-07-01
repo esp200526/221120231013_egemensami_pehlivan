@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anadolu Cam</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .navbar {
+            background-color: #bcaceb;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .navbar .logo {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links li {
+            margin: 0 10px;
+        }
+
+        .nav-links li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links li a:hover {
+            color: lightblue;
+        }
+
+        .content {
+            text-align: center;
+            padding: 100px 50px;
+            background-image: url('background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #020202;
+            position: relative;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-section,
+        .services-section {
+            text-align: left;
+            padding: 50px;
+        }
+
+        .about-section h3,
+        .services-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .about-section p,
+        .services-section p {
+            line-height: 1.6;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Yeni stil tanımlamaları */
+        .contact-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .contact-section h2 {
+            font-size: 2rem;
+        }
+
+        .contact-section p {
+            font-size: 1rem;
+        }
+
+        .contact-section ul {
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 300px;
+            padding-left: 0;
+        }
+
+        .contact-section ul li {
+            margin-bottom: 10px;
+            list-style-type: none;
+        }
+
+        .contact-section form {
+            max-width: 300px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact-section label,
+        .contact-section textarea,
+        .contact-section input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .contact-section button {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        /* Galeri stil tanımlamaları */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            flex: 1 0 300px;
+            max-width: 100%;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>ANADOLU CAM</h1>
+        <p>Bu 1957'den beri.</p>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <img src="AnadoluCamLogo-Footer.png" alt="Anadolu Cam Logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="#anasayfa">Anasayfa</a></li>
+                <li><a href="#hakkimizda">Hakkımızda</a></li>
+                <li><a href="#hizmetler">Hizmetler</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="anasayfa" class="content">
+        <h2>Anadolu Cam</h2>
+        <p>1957 yılından beri cam sanayisinde öncü olan Anadolu Cam...</p>
+        <img src="461202337b2879c1c0d5763a0551e2a5.jpeg" alt="Anadolu Cam Ürünleri">
+    </div>
+
+    <div id="hakkimizda" class="about-section">
+        <h2>Hakkımızda</h2>
+        <p>1957 Yılında Ankara’da kurulan Anadolu Cam San. ve Tic. Ltd. Şti. ,1976 yılından beri faaliyetlerine İstanbul’da devam etmektedir. Kurtköy’de bulunan merkez fabrikası , aynı bölgede bulunan lamine üretim fabrikası ve GEPOSB’de bulunan fabrikasıyla birlikte daha kaliteli ve güvenli adımlarla İstanbul başta olmak üzere, Türkiye genelinde gelişerek ve kendisini sürekli yenileyerek çalışmalarına devam etmektedir.
+
+            1970 yılında Trakya Camtaş Düz Pazarlama A.Ş.’den ‘’ Yetkili Cam Satıcılığı’’ unvanını ve 1998 yılında ‘’ Isıcam Yetkili Üreticiliği’’ unvanını da alarak faaliyet yelpazesini geliştirmiştir. Bugün faaliyetlerine Anadolu Cam Ürünleri San. Tic. A.Ş. ve Taşözler Cam İşleme Ltd.Şti. grup şirketleriyle birlikte devam ederek istihdamını arttırmaya ve faaliyetlerini güçlü bir şekilde sürdürmeye devam etmektedir.
+            
+            Anadolu Cam San. ve Tic. Ltd. Şti fabrikalarında kullanılan her türlü ekipman ve makineler, dünyanın en prestijli firmalarından tedarik edilmiştir. Anadolu Cam San. ve Tic. Ltd. Şti., bugün şubeleriyle beraber 32000 m2 kapalı alanda faaliyetlerine ilk günkü heyecanla , sürekli yenilenerek ve hep daha iyiyi hedefleyerek devam etmektedir.</p>
+    </div>
+
+    <div id="hizmetler" class="services-section">
+        <h2>Hizmetlerimiz</h2>
+        <div class="service-item">
+            <h3>Düz Cam</h3>
+            <p>Anadolu Cam San. ve Tic. Ltd. Şti. , 1970 yılından günümüze Şişecam bünyesinde üretilen renkli/renksiz düz cam çeşitleri, lamine camlar, renkli/renksiz flotal aynalar, tentesol reflekte camlar  ve low-e & solar low-e kaplamalı camların toptan satıcılığını; 1990 yılından itibaren de bu camların işlemeciliğini yapmaktadır. Günümüzde kendi bünyesinde düz temper, bombe temper, rodaj, delik, cnc, bizote, kanal, kumlama işlemlerinin hepsini yapmaktadır.</p>
+        </div>
+        <div class="service-item">
+            <h3>Isıcam</h3>
+            <p>Anadolu Cam San ve Tic.Ltd Şti. , 1998 yılında aldığı ‘’ Isıcam Yetkili Üreticiliği’’ unvanıyla  Şişecam’a bağlı ısıcam üreticiliğine başlamış ve günümüzde GEPOSB’de bulunan fabrikasında Lisec marka 2 ayrı makine parkuru, usta ekibi ve  aylık 25000m2 üretim kapasitesi ile müşterilerine hizmet vermeye devam etmektedir.</p>
+        </div>
+        <div class="service-item">
+            <h3>Lamine Cam</h3>
+            <p>Anadolu Cam San. ve Tic. Ltd. Şti. , 2010 yılında faaliyete geçen lamine üretim tesisinde min 300mm*300mm & max 4500mm*2600mm ebatlarında tercih edilen renk, kalınlık, desen, kaplamalı, temperli, bombeli, kumlamalı veya boyalı camlardan özel lamine cam ve kurşuna dayanıklı cam üretimi yapabilmektedir. Lamine üretim hattımızda Isıcam, kaplama ve kalınlık arttırma (Eva, PVB vb.) işlemleri yaparak müşterilerine geniş bir yelpazede hizmet sunmaktadır.</p>
+        </div>
+        
+        <div class="service-item">
+            <h3>Yalıtım Cam</h3>
+            <p>Anadolu Cam San ve Tic.Ltd Şti. , 2009 yılında ‘’ İzocam Yetkili Üreticiliği’’ unvanı ile CAMİSOLO yalıtım camı üretimine başlamış ve günümüzde GEPOSB’de bulunan fabrikasında 2 ayrı yalıtım camı üretim hattı, usta ekibi ve aylık 15000m2 üretim kapasitesi ile müşterilerine hizmet vermeye devam etmektedir. Genelde kullanım alanları teras kapama, bina cephesi uygulamaları, otel ve işyeri gibi ticari yapılarda tercih edilen cam ürünleridir. Cam’ın ısı yalıtımını sağlamak ve akustik değerlerini iyileştirmek amaçlı yapılan özel işlemler ile ışık geçişini değiştirmeden enerji tasarrufu ve konfor sağlamaktadır.</p>
+        </div>
+    </div>
+
+    <div class="gallery" id="galeri">
+        <div class="gallery-item">
+            <img src="unnamed.jpg" alt="Galeri Resmi 1">
+        </div>
+        <div class="gallery-item">
+            <img src="unnamed (1).jpg" alt="Galeri Resmi 2">
+        </div>
+        <div class="gallery-item">
+            <img src="maxresdefault.jpg" alt="Galeri Resmi 3">
+        </div>
+        <div class="gallery-item">
+            <img src="lamine-cam-resim-617076_w800_.png" alt="Galeri Resmi 4">
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 Anadolu Cam - Tüm hakları saklıdır.</p>
+    </div>
+
+    <div id="iletisim" class="contact-section">
+        <h2>İletişim</h2>
+        <p>Anadolu Cam ile iletişime geçmek için aşağıdaki bilgileri kullanabilirsiniz:</p>
+        <ul>
+            <li><strong>Adres:</strong> Kurtköy Mahallesi, Anadolu Cad. No:123, Pendik/İstanbul</li>
+            <li><strong>Telefon:</strong> +90 212 345 67 89</li>
+            <li><strong>E-posta:</strong> info@anadolucam.com</li>
+        </ul>
+        <form action="submit-form.php" method="POST">
+            <label for="name">Adınız:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">E-posta Adresiniz:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Mesajınız:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <button type="submit">Gönder</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
